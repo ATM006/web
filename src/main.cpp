@@ -103,7 +103,7 @@ int main() {
 	 // 
 	
 	 //printf("%s\n",package.c_str());
-	 send(clientFd,package.data(),package.length(),0);
+//	 send(clientFd,package.data(),package.length(),0);
 	
 
 	 close(clientFd);

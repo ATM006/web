@@ -28,6 +28,13 @@ bool  HttpRequest::read()  //read the request
 	return true;
 }
 
+bool HttpRequest::write()
+{
+
+	return true;
+}
+
+
 void HttpRequest::init()
 {
   	 m_check_state = CHECK_STATE_REQUESTLINE;

@@ -33,7 +33,8 @@ public:
 		init();
 	 }
 	 bool read();	   //read the request
-	 //HTTP_CODE write();
+	 bool write();
+
 	 void start()
 	 {
 	 	HTTP_CODE read_ret = parse_read();
@@ -54,6 +55,7 @@ private:
     char* get_line() { return m_read_buf + m_start_line; }
     LINE_STATUS parse_line();
 
+	 //HTTP_CODE parse_write();
 
 private:	
 	 int m_sockfd;
